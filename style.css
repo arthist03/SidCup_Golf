@@ -15,7 +15,7 @@ html,body{
     height: 20px;
     width: 20px;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     background-color: #95C11E;
     border-radius: 50%;
 }
@@ -38,7 +38,7 @@ html,body{
     gap: 40px;
     position: fixed;
     padding: 0 120px;
-    z-index: 99;
+    z-index: 100;
     /* background-color: orange; */
 }
 
@@ -120,6 +120,7 @@ background-color: rgba(0, 0, 0, 0.6);
     white-space: nowrap;
     position: relative;
     z-index: 99;
+    margin-bottom: 50px;
 }
 #scroller::-webkit-scrollbar{
     display: none;
@@ -167,6 +168,7 @@ background-color: rgba(0, 0, 0, 0.6);
     align-items: center;
     padding: 0 40px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 #about-us img{
@@ -199,6 +201,7 @@ background-color: rgba(0, 0, 0, 0.6);
     gap: 80px;
     position: relative;
     z-index: 99;
+    margin-bottom: 50px;
 }
 
 .card{
@@ -272,4 +275,36 @@ background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
     object-fit: cover;
     width: 15%;
+  }
+
+  #page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #page3>p{
+    font-size: 25px;
+    font-weight: 500;
+    width: 60%;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  #page3 img{
+    position: absolute;
+    height: 45px;
+  }
+
+  #page3 #colon1{
+    left: 12%;
+    top: 20%;
+  }
+  #page3 #colon2{
+    right: 15%;
+    bottom: 20%;
   }
