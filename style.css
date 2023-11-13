@@ -108,7 +108,7 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     widows: 100%;
     z-index: 10;
 }
@@ -119,7 +119,7 @@ background-color: rgba(0, 0, 0, 0.6);
     /* background-color: red; */
     white-space: nowrap;
     position: relative;
-    z-index: 10;
+    z-index: 99;
 }
 #scroller::-webkit-scrollbar{
     display: none;
@@ -192,15 +192,84 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 #card-containers{
-    background-color: red;
     height: 60vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    z-index: 99;
 }
 
 .card{
     height: 80%;
     width: 22%;
-    background-color:black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease-in-out 0.6s;
 }
+
+#card1 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+  #card2 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+  #card3 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding-top: 140px;
+    opacity: 0;
+    transition: all ease-in-out 0.6s;
+  }
+
+  .overlay h4{
+    color: #000;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .overlay p{
+    color: #000;
+    font-size: 15px;
+  }
+
+  .card:hover .overlay{
+    opacity: 1;
+  }
+
+  .card:hover{
+    transform: rotate3d(-1,1,0,15deg);
+  }
+
+  #green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+  }
+
+  #green-div h4{
+    width: 50%;
+    font-size: 23px;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  #green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 15%;
+  }
